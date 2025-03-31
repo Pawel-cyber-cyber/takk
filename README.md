@@ -1,0 +1,2 @@
+# takk
+testujemy gita
