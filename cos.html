@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function zegar()
+{
+  var dzisiaj = new Date();
+  var dzien = dzisiaj.getDate();
+  var miesiac = dzisiaj.getMonth()+1;
+  var rok = dzisiaj.getFullYear();
+  var godzina = dzisiaj.getHours();
+  var minuty = dzisiaj.getMinutes();
+  var sekunda = dzisiaj.getSeconds();
+document.getElementById("zegar").innerHTML = +dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuty+":"+sekunda+
+ 
+//  document.write("<b>"+dzien+"/"+miesiac+"/"+rok+"</b> Godzina <b>"+godzina+":"+minuty+":"+sekunda+"</b>");
+  setTimeout("zegar()",1000);
+}
+    </script>
+</body>
+</html>
